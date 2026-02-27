@@ -3,15 +3,8 @@
 <head>
 </head>
 <body>
-    <style>
-        .blue{
-            background-color: red;
-            color: red;
-
-        }
-        .black{
-            background-color: gray;
-        }
-    </style>
+ 
+         <p style="{{$css52}}">Makhachkala brat</p>
+    
 </body>
 </html>

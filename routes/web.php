@@ -151,5 +151,9 @@ Route::get('/10and11', [UserController::class, 'show4']);
 Route::get('/51', [User2Controller::class, 'z1']);
 
 
+
 // N 2
 Route::get('/52', [User2Controller::class, 'z2']);
+
+// N 3
+Route::get('/53', [User2Controller::class, 'z3']);

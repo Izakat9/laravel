@@ -12,9 +12,10 @@
         ]);
         }
 		public function z2()
-		{   return view('Zakat9.css',[
-			$css52 = 'blue';
-		]);       
+		{   $css52 = 'color:blue';
+        return view('Zakat9.css', ['css52'=>$css52]);
+			
+		        
         }
 
 
