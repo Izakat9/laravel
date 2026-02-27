@@ -4,7 +4,7 @@
 </head>
 <body>
  
-         <p style="{{$css52}}">Makhachkala brat</p>
-    
+         <p style="{{$c52}}">Makhachkala brat</p>
+
 </body>
 </html>
