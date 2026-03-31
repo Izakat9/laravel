@@ -133,11 +133,16 @@
 		{ 	$muss = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
 			return view('Zakat9.p5.p519', ['muss'=>$muss] ); }
 
-	public function Z20()
+	public function Z2021()
 		{ 	$ss = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
 			$muss = [ 4, 16, 25, 36, 49, 64, 81, 100, 121 ];
-			return view('Zakat9.p5.p520', ['muss'=>$muss, 'ss'=>$ss ] ); }
-
+			return view('Zakat9.p5.p52021', ['muss'=>$muss, 'ss'=>$ss ] ); }
+	
+	public function Z22()
+		{ 	$muss = [ 
+			
+			 ];
+			return view('Zakat9.p5.p519', ['muss'=>$muss] ); }
 
 
 
