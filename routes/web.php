@@ -192,6 +192,22 @@ Route::get('/519', [User2Controller::class, 'Z19']);
 // N 20, 21
 Route::get('/52021', [User2Controller::class, 'Z2021']);
 
-// N 22
-Route::get('/522', [User2Controller::class, 'Z22']);
+// N 22, 23
+Route::get('/52223', [User2Controller::class, 'Z2223']);
+
+// N 24
+Route::get('/524', [User2Controller::class, 'Z24']);
+
+// N 25
+Route::get('/525', [User2Controller::class, 'Z25']);
+
+// N 26
+Route::get('/526', [User2Controller::class, 'Z26']);
+
+
+// N 27 28
+Route::get('/527', [User2Controller::class, 'Z2728']);
+
+// N 29
+Route::get('/529', [User2Controller::class, 'Z29']);
 

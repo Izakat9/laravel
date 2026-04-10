@@ -138,12 +138,53 @@
 			$muss = [ 4, 16, 25, 36, 49, 64, 81, 100, 121 ];
 			return view('Zakat9.p5.p52021', ['muss'=>$muss, 'ss'=>$ss ] ); }
 	
-	public function Z22()
+	public function Z2223()
 		{ 	$muss = [ 
-			
-			 ];
-			return view('Zakat9.p5.p519', ['muss'=>$muss] ); }
+				'0' => 'Moskow',
+				'1' => 'Omsk',
+				'2' => 'Astana',
+							 ];
+			return view('Zakat9.p5.p52223', ['muss'=>$muss] ); }
 
+	public function Z24()
+		{ 	$muss = [ 
+				1, 2, 3, 4 , 5, 6, 7, 8, 9, 10
+							 ];
+			return view('Zakat9.p5.p524', ['muss'=>$muss] ); }
+
+	public function Z25()
+		{ 	$data = [ 1, 2, 3, 4, 5 ]; 
+		// 1 or 2
+		    $data = 67; 
+			return view('Zakat9.p5.p525', ['data'=>$data] ); }
+
+	public function Z26()
+		{ 	$muss = [
+        [ 1, 2, 3 ],
+        [ 4, 5, 6 ],
+    	[ 7, 8, 9 ]
+		];
+		    
+			return view('Zakat9.p5.p526', ['muss'=>$muss] ); }
+
+	public function Z2728()
+{
+    $employees = [
+        ['name' => 'user1', 'surname' => 'surname1', 'salary' => 1000],
+        ['name' => 'user2', 'surname' => 'surname2', 'salary' => 2000],
+        ['name' => 'user3', 'surname' => 'surname3', 'salary' => 3000],
+    ];
+			return view('Zakat9.p5.p527',['employees' => $employees]); }
+	public function Z29()
+{
+    $WW = [ 
+		'User1',
+		'User2',
+		'User3',
+		'User4',
+		'User5',
+	];
+			return view('Zakat9.p5.p529',['WW' => $WW]); }
 
 
     }
