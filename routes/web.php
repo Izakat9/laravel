@@ -211,3 +211,14 @@ Route::get('/527', [User2Controller::class, 'Z2728']);
 // N 29
 Route::get('/529', [User2Controller::class, 'Z29']);
 
+
+// N 30 && 31
+Route::get('/53031', [User2Controller::class, 'Z3031']);
+
+// N 32
+Route::get('/532', [User2Controller::class, 'Z32']);
+
+// N 33 ТОЛЬКО НАЧАЛ
+
+Route::get('/533', [User2Controller::class, 'Z33']);
+

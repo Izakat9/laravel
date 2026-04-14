@@ -6,12 +6,18 @@
 <body> 
     <p>~ ~ Задание 29 ~ ~</p>
 
-  @for ($WW!==0)
-    @foreach ($WW as $ss)
-            {{ $ss}} 
-    @endforeach
-@else 
-error 
-
+  <ul>
+    @if(!isset($WW) || empty($WW))
+Массив пустой или там нету - users
+    @else
+    @foreach ($WW as $SS)
+    @if ($SS >0)
+        <li>
+            {{ $SS }} 
+        </li>
+@endif
+@endforeach
+@endif
+</ul>
 </body>
 </html>
