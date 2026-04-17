@@ -3,6 +3,7 @@
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\User2Controller;
+use App\Http\Controllers\p6Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -218,7 +219,96 @@ Route::get('/53031', [User2Controller::class, 'Z3031']);
 // N 32
 Route::get('/532', [User2Controller::class, 'Z32']);
 
-// N 33 ТОЛЬКО НАЧАЛ
+// N 33 
 
 Route::get('/533', [User2Controller::class, 'Z33']);
 
+// N 34
+
+Route::get('/534', [User2Controller::class, 'Z34']);
+
+// N 35
+
+Route::get('/535', [User2Controller::class, 'Z35']);
+
+// N 36
+
+Route::get('/536', [User2Controller::class, 'Z36']);
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
+//////////////// П Р А К Т И К А     Н О М Е Р     6 //////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+//Практика 6. Коллекции
+//Sum. Суммирует числа в arr
+Route::get('/63', action: [p6Controller::class, 'collect']);
+
+//Avg. Среднее число между указанными в arr.
+Route::get('/64', action: [p6Controller::class, 'avg']);
+
+//Chunk. Разбивает коллекцию на несколько меньших коллекций указанного размера
+Route::get('/65', action: [p6Controller::class, 'chunk']);
+
+//ChunkWhile. Разбивает коллекцию на несколько меньших по размеру коллекций на основе результата переданного замыкания
+Route::get('/66', action: [p6Controller::class, 'chunkwhile']);
+
+//Collapse. Сворачивает коллекцию массивов в единую плоскую коллекцию
+Route::get('/67', action: [p6Controller::class, 'collapse']);
+
+//Combine. Объединяет значения коллекции в качестве ключей со значениями другого массива или коллекции
+Route::get('/68', action: [p6Controller::class, 'combine']);
+
+//Concat. Добавляет значения переданного массива или коллекции в конец другой коллекции
+Route::get('/69', action: [p6Controller::class, 'concat']);
+
+//CrossJoin. Перекрестно соединяет значения коллекции среди переданных массивов или коллекций, возвращая декартово произведение со всеми возможными перестановками
+Route::get('/610', action: [p6Controller::class, 'crossjoin']);
+
+//Diff. Сравнивает коллекцию с другой коллекцией или простым массивом PHP на основе его значений
+Route::get('/611', action: [p6Controller::class, 'diff']);
+
+//Dump. Выводит элементы коллекции
+Route::get('/612', action: [p6Controller::class, 'dump']);
+
+//Duplicates. Извлекает и возвращает повторяющиеся значения из коллекции
+Route::get('/613', action: [p6Controller::class, 'duplicates']);
+
+//Except. Возвращает все элементы из коллекции, кроме тех, которые имеют указанные ключи
+Route::get('/614', action: [p6Controller::class, 'except']);
+
+//Filter. Фильтрует коллекцию, используя переданное замыкание, сохраняя только те элементы, которые проходят указанный тест истинности
+Route::get('/615', action: [p6Controller::class, 'filter']);
+
+//Flatten. Объединяет многомерную коллекцию в одноуровневую
+Route::get('/616', action: [p6Controller::class, 'flatten']);
+
+//Flip. Меняет местами ключи коллекции на их соответстующие значения
+Route::get('/617', action: [p6Controller::class, 'flip']);
+
+//Forget. Удаляет элемент из коллекции по его ключу
+Route::get('/618', action: [p6Controller::class, 'forget']);
+
+//Get. Возвращает элемент по указанному ключу
+Route::get('/619', action: [p6Controller::class, 'get']);
+
+//Implode. Объединяет элементы коллекции
+Route::get('/620', action: [p6Controller::class, 'implode']);
+
+//Intersect. Удаляет любые значения из исходной коллекции, которых нет в указанном массиве или коллекции
+Route::get('/621', action: [p6Controller::class, 'intersect']);
+
+//KeyBy. Возвращает коллекцию, элементы которой будут образованы путем присвоения ключей элементам базовой коллекции
+Route::get('/622', action: [p6Controller::class, 'keyby']);
+
+//Keys. Возвращает все ключи коллекции
+Route::get('/623', action: [p6Controller::class, 'keys']);
+
+//Map. Выполняет итерацию по коллекции и передает каждое значение указанному замыканию
+Route::get('/624', action: [p6Controller::class, 'map']);
+
+//Max. Возвращает максимальное значение переданного ключа
+Route::get('/625', action: [p6Controller::class, 'max']);
+
+//Median. Возваращает медиану переданного ключа
+Route::get('/626', action: [p6Controller::class, 'median']);

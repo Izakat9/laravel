@@ -208,6 +208,31 @@
 		'Предложный падеж',
 	];
 			return view('Zakat9.p5.p532',['WW' => $WW]); }
+	
+			public function Z33()
+{
+    $WW = [ 
+		1, 2, 3, 4, 5, 6, 7, 8, 9
+	];
+			return view('Zakat9.p5.p533',['WW' => $WW]); }
+			
+			public function Z34()
+{
+    $WW = [
+	];
+			return view('Zakat9.p5.p534',['WW' => $WW]); }
+		
+			public function Z35()
+{
+    $WW = [ 
+		1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 9
+	];
+			return view('Zakat9.p5.p535',['WW' => $WW]); }
+		
+			public function Z36()
+{  
+			return view('Zakat9.p5.p536',[]); }
+		
 
 
     }
