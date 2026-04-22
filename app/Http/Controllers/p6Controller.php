@@ -81,7 +81,7 @@ class p6Controller extends Controller
     }
     public function dump()
     {
-        $collection = collect(['John Doe', 'Jane Doe']);
+        $collection = collect(['John Doe', 'Jane Doe']); 
         $collection->dump();
         return $collection;
     }
@@ -108,7 +108,7 @@ class p6Controller extends Controller
         return $filtered->all();
     }
     public function flatten()
-    {
+    { 
         $collection = collect([
             'name' => 'taylor',
             'languages' => [
@@ -139,7 +139,7 @@ class p6Controller extends Controller
         $value = $collection->get('framework');
         return $value;
     }
-    public function implode()
+    public function implode() 
     {
         $collection = collect([
             ['account_id' => 1, 'product' => 'Desk'],
@@ -164,7 +164,7 @@ class p6Controller extends Controller
             ['human_id' => 'humn-400', 'name' => 'Nikita'],
             ['human_id' => 'humn-500', 'name' => 'Ruslan'],
             ['human_id' => 'humn-600', 'name' => 'Eugene'],
-            ['human_id' => 'humn-700', 'name' => 'Yaroslave'],
+            ['human_id' => 'humn-700', 'name' => 'Yaroslav'],
             ['human_id' => 'humn-800', 'name' => 'Valentin'],
             ['human_id' => 'humn-900', 'name' => 'Il`dar'],
             ['human_id' => 'humn-901', 'name' => 'Kirill'],
@@ -215,21 +215,52 @@ class p6Controller extends Controller
     public function median()
     {
         $median = collect([
-            ['foo' => 10],
-            ['foo' => 210],
-            ['foo' => 90],
-            ['foo' => 1200],
-            ['foo' => 188],
-        ])->median('foo');
-        $mediana = collect([1, 2, 3, 4, 5, 19, 52, 69])->median();
+    ['foo' => 10],
+    ['foo' => 10],
+    ['foo' => 20],
+    ['foo' => 40]
+])->median('foo');
+
+       $median = collect([1, 1, 2, 4])->median();
         return $median;
     }
 
-}
+  public function merge()
+    {
+        $collection = collect(['product_id' => 1, 'price' => 100]);
 
+        $merged = $collection->merge(['price' => 200, 'discount' => false]);    
 
+        $merged->all();
+        return $merged;
+// ['product_id' => 1, 'price' => 200, 'discount' => false]
+    }
 
+  public function merge2()
+    {
+       $collection = collect(['Desk', 'Chair']);
 
+$merged = $collection->merge(['Bookcase', 'Door']);
 
+$merged->all();
 
+// ['Desk', 'Chair', 'Bookcase', 'Door']
+    return $merged;
+    }
+  public function mergeRecursive()
+    {
+      $collection = collect(['product_id' => 1, 'price' => 100]);
 
+$merged = $collection->mergeRecursive([
+    'product_id' => 2,
+    'price' => 200,
+    'discount' => false
+]);
+
+$merged->all();
+
+// ['product_id' => [1, 2], 'price' => [100, 200], 'discount' => false]
+    return $merged;
+    }
+    
+} 
