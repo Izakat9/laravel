@@ -6,18 +6,14 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-   public function up()
+ public function up(): void
 {
     Schema::table('users', function (Blueprint $table) {
-        $table->string('email')->nullable(); 
-        $table->string('phone')->nullable();
+        $table->string('salary')->default(0);
     });
 }
-
-	
-		public function down()
-		{
-			Schema::dropIfExists('users');
-		}
+    public function down(): void
+    {
+        //
+    }
 };
-
