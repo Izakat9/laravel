@@ -1,0 +1,23 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+	{
+		public function up()
+		{
+		 Schema::create('mi11', function (Blueprint $table) {
+        $table->id(); 
+        $table->string('title'); 
+	});
+		}
+		
+		public function down()
+		{
+			Schema::dropIfExists('mi11');
+		}
+	}                 // php artisan migrate:rollback - для отката миграции
+?>
+

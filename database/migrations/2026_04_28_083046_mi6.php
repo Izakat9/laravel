@@ -8,10 +8,11 @@ return new class extends Migration
 {
    public function up()
 {
-    Schema::table('users', function (Blueprint $table) {
-        $table->string('email')->nullable(); 
-        $table->string('phone')->nullable();
-    });
+   Schema::create('users', function (Blueprint $table) {
+    $table->id();
+    $table->string('email')->nullable();
+    $table->timestamps();
+});
 }
 
 	
